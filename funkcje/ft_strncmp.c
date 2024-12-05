@@ -1,40 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 14:30:07 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 14:59:53 by mokon            ###   ########.fr       */
+/*   Created: 2024/12/05 17:30:45 by mokon             #+#    #+#             */
+/*   Updated: 2024/12/05 17:46:38 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	*ft_memmmove(void *dst, const void *src, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	char *s;
-	char *d;
-	size_t i;
-	s = (char *)src;
-	d = (char *)dst;
-	i = 0;
 
-	if (d > s)
-	{
-		while (n-- > 0)
-		{
-			d[n] = s[n];
-		}
-	}
-	else
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
-	return (dst);
+        while ((*s1 && *s2) && n--)
+        {
+            if (*s1 != *s2)
+            {
+                return (*s1 - *s2);
+            }
+            *s1++;
+            *s2++;
+        }
+        return (0);
+
 }
+
+// int	main(void)
+// {
+// 	printf("%d", ft_strncmp("abec", "abdc", 4));
+// }

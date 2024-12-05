@@ -1,40 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 14:30:07 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 14:59:53 by mokon            ###   ########.fr       */
+/*   Created: 2024/12/05 16:43:21 by mokon             #+#    #+#             */
+/*   Updated: 2024/12/05 17:23:30 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
-void	*ft_memmmove(void *dst, const void *src, size_t n)
+char *ft_strchr( const char * str, int z )
 {
-	char *s;
-	char *d;
-	size_t i;
-	s = (char *)src;
-	d = (char *)dst;
-	i = 0;
-
-	if (d > s)
-	{
-		while (n-- > 0)
-		{
-			d[n] = s[n];
-		}
-	}
-	else
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
-	return (dst);
+    int i;
+    i = 0;
+    while(str[i])
+    {
+        if(str[i] == (char)z) 
+            return ((char *)(str + i));
+        i++;
+    }
+    return (NULL);
 }
+
+// int main()
+// {
+//     printf("%s",ft_strchr("jasdasasdgg",97));
+// }

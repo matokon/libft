@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ZLE.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 14:30:07 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 14:59:53 by mokon            ###   ########.fr       */
+/*   Created: 2024/12/05 17:53:03 by mokon             #+#    #+#             */
+/*   Updated: 2024/12/05 19:13:19 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	*ft_memmmove(void *dst, const void *src, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char *s;
-	char *d;
+	unsigned char *e;
+	e = (char *)s;
 	size_t i;
-	s = (char *)src;
-	d = (char *)dst;
 	i = 0;
-
-	if (d > s)
+	while (e[i] != '\0' && --n)
 	{
-		while (n-- > 0)
+		if (e[i] == (unsigned char)c)
 		{
-			d[n] = s[n];
+			return ((void *)(e + i));
 		}
+		i++;
 	}
-	else
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
-	return (dst);
+	return (NULL);
 }
+
+///ZLE

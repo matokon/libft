@@ -1,40 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 14:30:07 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 14:59:53 by mokon            ###   ########.fr       */
+/*   Created: 2024/12/05 15:02:11 by mokon             #+#    #+#             */
+/*   Updated: 2024/12/05 15:07:49 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	*ft_memmmove(void *dst, const void *src, size_t n)
+int	ft_atoi(char *str)
 {
-	char *s;
-	char *d;
-	size_t i;
-	s = (char *)src;
-	d = (char *)dst;
-	i = 0;
+	int cons;
+	int result;
 
-	if (d > s)
+	result = 0;
+	cons = 0;
+	while (*str >= 9 && *str <= 13 || *str == 32)
+		str++;
+	while (*str == '-' || *str == '+')
 	{
-		while (n-- > 0)
-		{
-			d[n] = s[n];
-		}
+		if (*str == '-')
+			cons += 1;
+		str++;
 	}
-	else
+	while (*str >= '0' && *str <= '9')
 	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
+		result = (result * 10) + (*str - '0');
+		str++;
 	}
-	return (dst);
+	return (result * cons);
 }
