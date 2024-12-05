@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 14:39:31 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/04 16:19:47 by mokon            ###   ########.fr       */
+/*   Updated: 2024/12/05 12:49:48 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t src_len;
 
 	src_len = ft_strlen(src);
-	if (!size || !src)
+	if (size == 0 || src == NULL)
 		return (src_len);
 	while (*src && --size)
 	{
