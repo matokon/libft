@@ -1,0 +1,1 @@
+int silnia(int n);
