@@ -6,13 +6,15 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 14:01:40 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/03 15:48:17 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 17:41:24 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalpha(int str)
 {
-	if (str >= 'A' && str <= 'Z' || str >= 'a' && str <= 'z')
+	if ((str >= 'A' && str <= 'Z') || (str >= 'a' && str <= 'z'))
 	{
 		return (1);
 	}

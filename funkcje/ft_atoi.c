@@ -6,23 +6,25 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 15:02:11 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 15:07:49 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 19:04:37 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int cons;
 	int result;
 
 	result = 0;
-	cons = 0;
-	while (*str >= 9 && *str <= 13 || *str == 32)
+	cons = 1;
+	while ((*str >= 9 && *str <= 13) || *str == ' ')
 		str++;
-	while (*str == '-' || *str == '+')
+	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-			cons += 1;
+			cons *= -1;
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')

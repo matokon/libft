@@ -6,25 +6,21 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 16:43:21 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 17:23:30 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 18:52:51 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-char *ft_strchr( const char * str, int z )
-{
-    int i;
-    i = 0;
-    while(str[i])
-    {
-        if(str[i] == (char)z) 
-            return ((char *)(str + i));
-        i++;
-    }
-    return (NULL);
-}
+#include "libft.h"
 
-// int main()
-// {
-//     printf("%s",ft_strchr("jasdasasdgg",97));
-// }
+char	*ft_strchr(const char *s, int i)
+{
+	while (*s)
+	{
+		if (*s == (char)i)
+			return ((char *)s);
+		s++;
+	}
+	if (i == '\0')
+		return ((char *)s);
+	return (0);
+}

@@ -6,11 +6,13 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 17:34:39 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/03 17:39:44 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 17:48:36 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(char n)
+#include "libft.h"
+
+int	ft_tolower(int n)
 {
 	if (n >= 'A' && n <= 'Z')
 		return (n + 32);

@@ -6,13 +6,13 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 14:30:07 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 14:59:53 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 18:43:16 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void	*ft_memmmove(void *dst, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
 	char *s;
 	char *d;

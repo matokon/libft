@@ -6,18 +6,16 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:15:25 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/03 15:48:18 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 17:42:20 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int n)
+#include "libft.h"
+
+int	ft_isalnum(int i)
 {
-	if (n >= 'A' && n <= 'Z' || n >= 'a' && n <= 'z' || n >= '0' && n <= '9')
-	{
+	if ((i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') || (i >= '0'
+			&& i <= '9'))
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }

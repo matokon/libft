@@ -6,11 +6,11 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 14:39:31 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/05 12:49:48 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 17:32:35 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -27,5 +27,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	*dst = '\0';
 	return (src_len);
-
 }

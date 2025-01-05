@@ -6,13 +6,13 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 12:38:19 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/04 14:28:50 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 18:42:58 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void	*memset(void *ptr, int value, size_t num)
+void	*ft_memset(void *ptr, int value, size_t num)
 {
 	size_t	i;
 	char	*str;

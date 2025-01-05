@@ -6,13 +6,15 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:19:55 by mokon             #+#    #+#             */
-/*   Updated: 2024/12/03 15:46:56 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/05 17:43:38 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int n)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
-	if (n >= 0 && n <= 31 || n == 127)
-		return (0);
-	return (1);
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }
