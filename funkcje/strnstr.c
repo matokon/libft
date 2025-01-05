@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   strnstr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/03 15:32:30 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 15:07:40 by mokon            ###   ########.fr       */
+/*   Created: 2025/01/05 13:57:03 by mokon             #+#    #+#             */
+/*   Updated: 2025/01/05 13:57:25 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+#include <stdio.h>
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    int i;
-    i = 0;
-    while(str[i] != '\0')
-    {
-        i++;
-    }
-    return i;
+	unsigned long	i;
+	int				j;
+
+	j = 0;
+	i = 0;
+	if (!*needle)
+		return ((char *)haystack);
+	while (haystack[i])
+	{
+		j = 0;
+		while (haystack[i] == needle[j] && haystack[i] && i < len)
+		{
+			i++;
+			j++;
+		}
+		if (!needle[j])
+			return ((char *)&haystack[i - j]);
+		i = (i - j) + 1;
+	}
+	return (NULL);
 }
-// int main()
-// {
-//     printf("%d",ft_strlen("osiem"));
-// }
