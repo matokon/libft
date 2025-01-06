@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 17:22:12 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:33:09 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:33:21 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t i;
-	size_t j;
-	char *str;
+	size_t	i;
+	size_t	j;
+	char	*str;
 
 	str = 0;
 	if (s1 != 0 && set != 0)

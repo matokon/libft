@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 16:36:02 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:30:11 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:35:45 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	size_t total_size;
-	void *p;
+	size_t	total_size;
+	void	*p;
 
 	if (count == 0 || size == 0)
 	{

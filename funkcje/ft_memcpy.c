@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 13:31:09 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:31:36 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:25:41 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *destination, const void *source, size_t num)
 {
-	size_t	i;
+	size_t	i;	
 	char	*dest;
 	char	*sour;
 

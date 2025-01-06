@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 17:45:02 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:46:59 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:35:05 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	char *str;
+	size_t	i;
+	char	*str;
 
 	i = 0;
 	str = (char *)s;

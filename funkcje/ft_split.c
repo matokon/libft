@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 17:23:40 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:32:08 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:33:14 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ static size_t	ft_toklen(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char **ret;
-	size_t i;
-	size_t len;
+	char	**ret;
+	size_t	i;
+	size_t	len;
 
 	if (!s)
 		return (0);

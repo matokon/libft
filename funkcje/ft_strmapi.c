@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 17:25:12 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:32:46 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:31:34 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int i;
-	char *str;
+	unsigned int	i;
+	char			*str;
 
 	i = 0;
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);

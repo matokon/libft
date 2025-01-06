@@ -26,12 +26,3 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
-
-// int	main(void)
-// {
-// 	char	s[5] = "abcde";
-
-// 	memset(&s, '0000', 3);
-// 	printf("%s", s);
-// 	return (0);
-// }

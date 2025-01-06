@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 17:24:14 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:30:57 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:32:45 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ static unsigned int	ft_number_size(int number)
 
 char	*ft_itoa(int n)
 {
-	char *string;
-	unsigned int number;
-	unsigned int length;
+	char			*string;
+	unsigned int	number;
+	unsigned int	length;
 
 	length = ft_number_size(n);
 	string = (char *)malloc(sizeof(char) * (length + 1));

@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 17:21:09 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 17:32:27 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:34:27 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int i;
-	int j;
-	char *str;
+	int		i;
+	int		j;
+	char	*str;
 
 	i = 0;
 	j = 0;

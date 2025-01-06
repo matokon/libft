@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 15:02:11 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 19:04:37 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:28:02 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int cons;
-	int result;
+	int	cons;
+	int	result;
 
 	result = 0;
 	cons = 1;

@@ -6,7 +6,7 @@
 /*   By: mokon <mokon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 15:28:37 by mokon             #+#    #+#             */
-/*   Updated: 2025/01/05 18:47:03 by mokon            ###   ########.fr       */
+/*   Updated: 2025/01/06 14:34:38 by mokon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 char	*ft_strdup(const char *s)
 {
-	int i;
-	int j;
-	char *str;
+	int		i;
+	int		j;
+	char	*str;
+
 	i = 0;
 	j = ft_strlen(s);
 	str = (char *)malloc(sizeof(*str) * (j + 1));
@@ -26,5 +27,5 @@ char	*ft_strdup(const char *s)
 		i++;
 	}
 	str[i] = '\0';
-	return str;
+	return (str);
 }
